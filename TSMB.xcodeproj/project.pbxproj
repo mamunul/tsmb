@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9DC7E0CE929AAFA27A7B4019 /* Pods_TSMB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 340D02217AF70480CB1E5089 /* Pods_TSMB.framework */; };
+		D2B4CA23A2C97C87B33DC94B /* Pods_TSMBTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCF18D2983C7BCEF3B77A29A /* Pods_TSMBTests.framework */; };
 		EE1B94B329214F22001F699E /* TSMBApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1B94B229214F22001F699E /* TSMBApp.swift */; };
 		EE1B94B529214F22001F699E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1B94B429214F22001F699E /* ContentView.swift */; };
 		EE1B94B729214F23001F699E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE1B94B629214F23001F699E /* Assets.xcassets */; };
@@ -14,6 +16,7 @@
 		EE1B94C429214F23001F699E /* TSMBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1B94C329214F23001F699E /* TSMBTests.swift */; };
 		EE1B94CE29214F23001F699E /* TSMBUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1B94CD29214F23001F699E /* TSMBUITests.swift */; };
 		EE1B94D029214F23001F699E /* TSMBUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1B94CF29214F23001F699E /* TSMBUITestsLaunchTests.swift */; };
+		FD1FB70D35E09151EC1A609F /* Pods_TSMB_TSMBUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03D4F2FD8EC3D4298E2BE7D5 /* Pods_TSMB_TSMBUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03D4F2FD8EC3D4298E2BE7D5 /* Pods_TSMB_TSMBUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TSMB_TSMBUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		340D02217AF70480CB1E5089 /* Pods_TSMB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TSMB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFA5ADB964D068D92349B791 /* Pods-TSMB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TSMB.release.xcconfig"; path = "Target Support Files/Pods-TSMB/Pods-TSMB.release.xcconfig"; sourceTree = "<group>"; };
+		C4731C8C58139E4E3DE58302 /* Pods-TSMB-TSMBUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TSMB-TSMBUITests.release.xcconfig"; path = "Target Support Files/Pods-TSMB-TSMBUITests/Pods-TSMB-TSMBUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CCF18D2983C7BCEF3B77A29A /* Pods_TSMBTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TSMBTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7A653C36CFAC20831C916FF /* Pods-TSMBTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TSMBTests.debug.xcconfig"; path = "Target Support Files/Pods-TSMBTests/Pods-TSMBTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E7C85ED08B39DCC5A056B9FF /* Pods-TSMB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TSMB.debug.xcconfig"; path = "Target Support Files/Pods-TSMB/Pods-TSMB.debug.xcconfig"; sourceTree = "<group>"; };
 		EE1B94AF29214F22001F699E /* TSMB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TSMB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE1B94B229214F22001F699E /* TSMBApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSMBApp.swift; sourceTree = "<group>"; };
 		EE1B94B429214F22001F699E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +54,8 @@
 		EE1B94C929214F23001F699E /* TSMBUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TSMBUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE1B94CD29214F23001F699E /* TSMBUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSMBUITests.swift; sourceTree = "<group>"; };
 		EE1B94CF29214F23001F699E /* TSMBUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSMBUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EE7BECE3E7A578605FDD0BEF /* Pods-TSMBTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TSMBTests.release.xcconfig"; path = "Target Support Files/Pods-TSMBTests/Pods-TSMBTests.release.xcconfig"; sourceTree = "<group>"; };
+		F9027FBD0B53F511C4A3FA0F /* Pods-TSMB-TSMBUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TSMB-TSMBUITests.debug.xcconfig"; path = "Target Support Files/Pods-TSMB-TSMBUITests/Pods-TSMB-TSMBUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DC7E0CE929AAFA27A7B4019 /* Pods_TSMB.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2B4CA23A2C97C87B33DC94B /* Pods_TSMBTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD1FB70D35E09151EC1A609F /* Pods_TSMB_TSMBUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +93,8 @@
 				EE1B94C229214F23001F699E /* TSMBTests */,
 				EE1B94CC29214F23001F699E /* TSMBUITests */,
 				EE1B94B029214F22001F699E /* Products */,
+				FB2FDC68508D4D5734079D67 /* Pods */,
+				EE952944CE52E5E296605A1C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +144,29 @@
 			path = TSMBUITests;
 			sourceTree = "<group>";
 		};
+		EE952944CE52E5E296605A1C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				340D02217AF70480CB1E5089 /* Pods_TSMB.framework */,
+				03D4F2FD8EC3D4298E2BE7D5 /* Pods_TSMB_TSMBUITests.framework */,
+				CCF18D2983C7BCEF3B77A29A /* Pods_TSMBTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FB2FDC68508D4D5734079D67 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E7C85ED08B39DCC5A056B9FF /* Pods-TSMB.debug.xcconfig */,
+				AFA5ADB964D068D92349B791 /* Pods-TSMB.release.xcconfig */,
+				F9027FBD0B53F511C4A3FA0F /* Pods-TSMB-TSMBUITests.debug.xcconfig */,
+				C4731C8C58139E4E3DE58302 /* Pods-TSMB-TSMBUITests.release.xcconfig */,
+				E7A653C36CFAC20831C916FF /* Pods-TSMBTests.debug.xcconfig */,
+				EE7BECE3E7A578605FDD0BEF /* Pods-TSMBTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +174,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EE1B94D329214F23001F699E /* Build configuration list for PBXNativeTarget "TSMB" */;
 			buildPhases = (
+				0D976163C5E51FF558C5237F /* [CP] Check Pods Manifest.lock */,
 				EE1B94AB29214F22001F699E /* Sources */,
 				EE1B94AC29214F22001F699E /* Frameworks */,
 				EE1B94AD29214F22001F699E /* Resources */,
+				6BB67BA4129D0363314BD765 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +193,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EE1B94D629214F23001F699E /* Build configuration list for PBXNativeTarget "TSMBTests" */;
 			buildPhases = (
+				317AE89B69F1A8CD7E945D60 /* [CP] Check Pods Manifest.lock */,
 				EE1B94BB29214F23001F699E /* Sources */,
 				EE1B94BC29214F23001F699E /* Frameworks */,
 				EE1B94BD29214F23001F699E /* Resources */,
@@ -169,9 +212,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EE1B94D929214F23001F699E /* Build configuration list for PBXNativeTarget "TSMBUITests" */;
 			buildPhases = (
+				95B0B25688D44CB665854C57 /* [CP] Check Pods Manifest.lock */,
 				EE1B94C529214F23001F699E /* Sources */,
 				EE1B94C629214F23001F699E /* Frameworks */,
 				EE1B94C729214F23001F699E /* Resources */,
+				2C5735B7C56C9E157840431E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -251,6 +296,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0D976163C5E51FF558C5237F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TSMB-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2C5735B7C56C9E157840431E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TSMB-TSMBUITests/Pods-TSMB-TSMBUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TSMB-TSMBUITests/Pods-TSMB-TSMBUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TSMB-TSMBUITests/Pods-TSMB-TSMBUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		317AE89B69F1A8CD7E945D60 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TSMBTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6BB67BA4129D0363314BD765 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TSMB/Pods-TSMB-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TSMB/Pods-TSMB-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TSMB/Pods-TSMB-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95B0B25688D44CB665854C57 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TSMB-TSMBUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EE1B94AB29214F22001F699E /* Sources */ = {
@@ -411,12 +559,15 @@
 		};
 		EE1B94D429214F23001F699E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7C85ED08B39DCC5A056B9FF /* Pods-TSMB.debug.xcconfig */;
 			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TSMB/Preview Content\"";
+				DEVELOPMENT_TEAM = 9GAPXPF2Z5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -424,13 +575,17 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.xetoz.yourserver.TSMB;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xetoz.TSMB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -439,12 +594,15 @@
 		};
 		EE1B94D529214F23001F699E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFA5ADB964D068D92349B791 /* Pods-TSMB.release.xcconfig */;
 			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TSMB/Preview Content\"";
+				DEVELOPMENT_TEAM = 9GAPXPF2Z5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -452,13 +610,17 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.xetoz.yourserver.TSMB;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xetoz.TSMB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -467,6 +629,7 @@
 		};
 		EE1B94D729214F23001F699E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7A653C36CFAC20831C916FF /* Pods-TSMBTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -486,6 +649,7 @@
 		};
 		EE1B94D829214F23001F699E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE7BECE3E7A578605FDD0BEF /* Pods-TSMBTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -505,6 +669,7 @@
 		};
 		EE1B94DA29214F23001F699E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9027FBD0B53F511C4A3FA0F /* Pods-TSMB-TSMBUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -522,6 +687,7 @@
 		};
 		EE1B94DB29214F23001F699E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4731C8C58139E4E3DE58302 /* Pods-TSMB-TSMBUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

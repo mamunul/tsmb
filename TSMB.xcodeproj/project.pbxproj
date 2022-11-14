@@ -38,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		03D4F2FD8EC3D4298E2BE7D5 /* Pods_TSMB_TSMBUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TSMB_TSMBUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A03AB162922124300398E01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		340D02217AF70480CB1E5089 /* Pods_TSMB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TSMB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFA5ADB964D068D92349B791 /* Pods-TSMB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TSMB.release.xcconfig"; path = "Target Support Files/Pods-TSMB/Pods-TSMB.release.xcconfig"; sourceTree = "<group>"; };
 		C4731C8C58139E4E3DE58302 /* Pods-TSMB-TSMBUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TSMB-TSMBUITests.release.xcconfig"; path = "Target Support Files/Pods-TSMB-TSMBUITests/Pods-TSMB-TSMBUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -111,6 +112,7 @@
 		EE1B94B129214F22001F699E /* TSMB */ = {
 			isa = PBXGroup;
 			children = (
+				0A03AB162922124300398E01 /* Info.plist */,
 				EE1B94B229214F22001F699E /* TSMBApp.swift */,
 				EE1B94B429214F22001F699E /* ContentView.swift */,
 				EE1B94B629214F23001F699E /* Assets.xcassets */,
@@ -570,6 +572,7 @@
 				DEVELOPMENT_TEAM = 9GAPXPF2Z5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TSMB/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -605,6 +608,7 @@
 				DEVELOPMENT_TEAM = 9GAPXPF2Z5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TSMB/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

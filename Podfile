@@ -4,8 +4,12 @@ platform :ios, '14.0'
 target 'TSMB' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-  pod 'SMBClient'
+  
   # Pods for TSMB
+  pod 'SMBClient'
+  pod 'NWWebSocket'
+  pod 'Starscream'
+
 
   target 'TSMBTests' do
     inherit! :search_paths

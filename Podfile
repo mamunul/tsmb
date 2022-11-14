@@ -6,9 +6,9 @@ target 'TSMB' do
   use_frameworks!
   
   # Pods for TSMB
-  pod 'SMBClient'
-  pod 'NWWebSocket'
-  pod 'Starscream'
+#  pod 'SMBClient'
+#  pod 'NWWebSocket'
+#  pod 'Starscream'
 
 
   target 'TSMBTests' do

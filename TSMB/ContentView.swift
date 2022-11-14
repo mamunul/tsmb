@@ -5,13 +5,14 @@
 //  Created by Mamunul Mazid on 13/11/22.
 //
 
-import Network
-import NWWebSocket
-import Starscream
+//import Network
+//import NWWebSocket
+//import Starscream
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject var presenter = SocketNetworkService()
+    let client = TCPClient(address: "punch.onlinewebshop.net", port: 80)
+//    @StateObject var presenter = SocketNetworkService()
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -21,8 +22,28 @@ struct ContentView: View {
         }
         .padding()
         .onAppear {
+            Task{
+                let header = "GET / HTTP/1.1\r\nHost: punch.onlinewebshop.net \r\n\r\n"
+                switch client.connect(timeout: 10) {
+                case .success:
+                    switch client.send(string: header ) {
+                    case .success:
+                        guard let data = client.read(1024*10) else { return }
+                        
+                        if let response = String(bytes: data, encoding: .utf8) {
+                            print(response)
+                        }
+                    case .failure(let error):
+                        print("fffailure")
+                        print(error)
+                    }
+                case .failure(let error):
+                    print("failure")
+                    print(error)
+                }
+            }
 //            Task {
-                presenter.openWebSocket()
+//                presenter.openWebSocket()
 //                presenter.openUsingLibrary()
 //                presenter.openSocketWithStarScream()
 //            }
@@ -35,7 +56,7 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
-
+/*
 class SocketNetworkService: NSObject, ObservableObject {
     // https://appspector.com/blog/websockets-in-ios-using-urlsessionwebsockettask
     // https://jayeshkawli.ghost.io/using-websockets-on-ios-using/
@@ -66,7 +87,7 @@ class SocketNetworkService: NSObject, ObservableObject {
     func openUsingLibrary() {
         let url = URL(string: urlString)!
         nwSocket = NWWebSocket(url: url)
-        nwSocket?.delegate = self
+//        nwSocket?.delegate = self
         nwSocket?.connect()
 
         // Use the WebSocket…
@@ -153,46 +174,49 @@ extension SocketNetworkService: WebSocketDelegate {
     }
 }
 
-extension SocketNetworkService: WebSocketConnectionDelegate {
-    func webSocketDidConnect(connection: WebSocketConnection) {
-        // Respond to a WebSocket connection event
-        print("socket connected")
-    }
+//extension SocketNetworkService: WebSocketConnectionDelegate {
+//
+//
+//    func webSocketDidAttemptBetterPathMigration(result: Result) {
+//
+//    }
+//
+//    func webSocketDidConnect(connection: WebSocketConnection) {
+//        // Respond to a WebSocket connection event
+//        print("socket connected")
+//    }
+//
+//    func webSocketDidDisconnect(connection: WebSocketConnection,
+//                                closeCode: NWProtocolWebSocket.CloseCode, reason: Data?) {
+//        // Respond to a WebSocket disconnection event
+//        print("socket disconnect:\(reason)")
+//    }
+//
+//    func webSocketViabilityDidChange(connection: WebSocketConnection, isViable: Bool) {
+//        // Respond to a WebSocket connection viability change event
+//        print("socket webSocketViabilityDidChange:\(isViable)")
+//    }
+//
+//
+//    func webSocketDidReceiveError(connection: WebSocketConnection, error: NWError) {
+//        // Respond to a WebSocket error event
+//        print("socket receive error:\(error)")
+//    }
+//
+//    func webSocketDidReceivePong(connection: WebSocketConnection) {
+//        // Respond to a WebSocket connection receiving a Pong from the peer
+//        print("socket receive pong")
+//    }
+//
+//    func webSocketDidReceiveMessage(connection: WebSocketConnection, string: String) {
+//        // Respond to a WebSocket connection receiving a `String` message
+//        print("socket recieve string message:\(string)")
+//    }
+//
+//    func webSocketDidReceiveMessage(connection: WebSocketConnection, data: Data) {
+//        // Respond to a WebSocket connection receiving a binary `Data` message
+//        print("socket receive data message:\(data)")
+//    }
+//}
 
-    func webSocketDidDisconnect(connection: WebSocketConnection,
-                                closeCode: NWProtocolWebSocket.CloseCode, reason: Data?) {
-        // Respond to a WebSocket disconnection event
-        print("socket disconnect:\(reason)")
-    }
-
-    func webSocketViabilityDidChange(connection: WebSocketConnection, isViable: Bool) {
-        // Respond to a WebSocket connection viability change event
-        print("socket webSocketViabilityDidChange:\(isViable)")
-    }
-
-    func webSocketDidAttemptBetterPathMigration(result: Result<WebSocketConnection, NWError>) {
-        // Respond to when a WebSocket connection migrates to a better network path
-        // (e.g. A device moves from a cellular connection to a Wi-Fi connection)
-        print("socket webSocketDidAttemptBetterPathMigration")
-    }
-
-    func webSocketDidReceiveError(connection: WebSocketConnection, error: NWError) {
-        // Respond to a WebSocket error event
-        print("socket receive error:\(error)")
-    }
-
-    func webSocketDidReceivePong(connection: WebSocketConnection) {
-        // Respond to a WebSocket connection receiving a Pong from the peer
-        print("socket receive pong")
-    }
-
-    func webSocketDidReceiveMessage(connection: WebSocketConnection, string: String) {
-        // Respond to a WebSocket connection receiving a `String` message
-        print("socket recieve string message:\(string)")
-    }
-
-    func webSocketDidReceiveMessage(connection: WebSocketConnection, data: Data) {
-        // Respond to a WebSocket connection receiving a binary `Data` message
-        print("socket receive data message:\(data)")
-    }
-}
+*/

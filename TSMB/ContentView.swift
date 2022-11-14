@@ -21,11 +21,11 @@ struct ContentView: View {
         }
         .padding()
         .onAppear {
-            Task {
+//            Task {
                 presenter.openWebSocket()
 //                presenter.openUsingLibrary()
 //                presenter.openSocketWithStarScream()
-            }
+//            }
         }
     }
 }
@@ -44,7 +44,9 @@ class SocketNetworkService: NSObject, ObservableObject {
     var nwSocket: NWWebSocket?
     var starScreamSocket: WebSocket?
 
-    let socketUrl = "ws://punch.onlinewebshop.net?client-id=mac&exclude-me"
+    let socketUrl =
+//    "ws://punch.onlinewebshop.net?client-id=mac&exclude-me"
+    "ws://socketsbay.com/wss/v2/2/demo/"
     let httpUrl = "http://punch.onlinewebshop.net?client-id=mac&exclude-me"
     
     var urlString = ""
@@ -55,7 +57,7 @@ class SocketNetworkService: NSObject, ObservableObject {
 
     func openSocketWithStarScream() {
         var request = URLRequest(url: URL(string: urlString)!)
-        request.timeoutInterval = 5
+//        request.timeoutInterval = 5
         starScreamSocket = WebSocket(request: request)
         starScreamSocket?.delegate = self
         starScreamSocket?.connect()
